@@ -1,0 +1,7 @@
+substitutions:
+  name: AlexaESP
+  external_components_source: github://creepystefan/ESPHOME-Alexa@main
+  
+external_components:
+  - source: ${external_components_source}
+    refresh: 0s
