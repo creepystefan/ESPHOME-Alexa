@@ -45,9 +45,9 @@ void setup() {
     Serial.println();
 
     // LEDs
-    pinMode(LED_YELLOW, OUTPUT);
-    pinMode(LED_GREEN, OUTPUT);
-    pinMode(LED_BLUE, OUTPUT);
+    pinMode(LED, OUTPUT);
+    pinMode(GPIO_RX, OUTPUT);
+    pinMode(GPIO_TX, OUTPUT);
     
     // Wifi
     wifiSetup();
