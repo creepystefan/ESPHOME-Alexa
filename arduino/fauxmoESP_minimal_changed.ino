@@ -66,12 +66,7 @@ void setup() {
         
         Serial.printf("[MAIN] Device #%d (%s) state: %s value: %d\n", device_id, device_name, state ? "ON" : "OFF", value);
 
-#define LED                 4
-#define GPIO_RX             5
-#define GPIO_TX             1
-#define ID_LED              "pin4"
-#define ID_GPIORX           "pin3"
-#define ID_GPIOTX           "pin1"
+
         if (strcmp(device_name, ID_LED)==0) {               //#define ID_LED       "pin4"
             digitalWrite(LED, state ? HIGH : LOW);          //#define LED              4
         } else if (strcmp(device_name, ID_GPIORX)==0) {     //#define ID_GPIORX    "pin3"
