@@ -56,10 +56,10 @@ void setup() {
     fauxmo.enable(true);
 
     // Add virtual devices
-    fauxmo.addDevice(ID_);
-    fauxmo.addDevice(ID_LED);
-    fauxmo.addDevice(ID_GPIORX);
-    fauxmo.addDevice(ID_GPIOTX);
+    fauxmo.addDevice(ID_);        
+    fauxmo.addDevice(ID_LED);     //#define ID_LED       "pin4"
+    fauxmo.addDevice(ID_GPIORX);  //#define ID_GPIORX    "pin3"
+    fauxmo.addDevice(ID_GPIOTX);  //#define ID_GPIORX    "pin1"
     
     fauxmo.onSetState([](unsigned char device_id, const char * device_name, bool state, unsigned char value) {
         
