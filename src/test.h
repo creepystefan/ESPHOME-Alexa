@@ -12,7 +12,7 @@ fauxmoESP fauxmo;
 #define ID_GPIORX           "pin3"
 #define ID_GPIOTX           "pin1"
 
-class ALEXAESPtest : public Component {
+class MyCustomComponent : public Component {
  public:
   void setup() override {
    
