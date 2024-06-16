@@ -1,6 +1,8 @@
 #include "esphome.h"
 #include "fauxmoESP.h"
 
+fauxmoESP fauxmo;
+
 #define SERIAL_BAUDRATE     115200
 
 #define LED                 4
