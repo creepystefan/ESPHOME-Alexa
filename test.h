@@ -1,6 +1,15 @@
 #include "esphome.h"
 #include "fauxmoESP.h"
 
+#define SERIAL_BAUDRATE     115200
+
+#define LED                 4
+#define GPIO_RX             5
+#define GPIO_TX             1
+#define ID_LED              "pin4"
+#define ID_GPIORX           "pin3"
+#define ID_GPIOTX           "pin1"
+
 class ALEXAESPtest : public Component {
  public:
   void setup() override {
