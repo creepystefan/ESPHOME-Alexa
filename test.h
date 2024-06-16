@@ -3,10 +3,8 @@
 class MyCustomComponent : public Component {
  public:
   void setup() override {
-    // This will be called once to set up the component
-    // think of it as the setup() call in Arduino
-    pinMode(5, INPUT);
-    pinMode(6, OUTPUT);
+   
+
   }
   void loop() override {
     // This will be called very often after setup time.
