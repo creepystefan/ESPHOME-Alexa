@@ -28,6 +28,8 @@ THE SOFTWARE.
 
 #include <Arduino.h>
 #include "fauxmoESP.h"
+#include "test.h"
+
 
 // -----------------------------------------------------------------------------
 // UDP
