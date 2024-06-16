@@ -12,10 +12,8 @@ fauxmoESP fauxmo;
 #define ID_GPIORX           "pin3"
 #define ID_GPIOTX           "pin1"
 
-class MyCustomSensor : public PollingComponent, public Sensor {
+class MyCustomSensor : public Component, public Sensor {
  public:
-  // constructor
-  MyCustomSensor() : PollingComponent(15000) {}
   void setup() override {
    
     // Init serial port and clean garbage
