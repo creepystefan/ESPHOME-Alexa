@@ -1,4 +1,5 @@
 #include "esphome.h"
+#include "fauxmoESP.h"
 
 class ALEXAESPtest : public Component {
  public:
