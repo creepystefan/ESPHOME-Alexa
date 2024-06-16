@@ -64,5 +64,5 @@ class MyCustomComponent : public Component {
         last = millis();
         Serial.printf("[MAIN] Free heap: %d bytes\n", ESP.getFreeHeap());
     }
-   }
+  }
 };
