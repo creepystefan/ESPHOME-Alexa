@@ -1,5 +1,5 @@
 #include "esphome.h"
-#include "fauxmoESP.h"
+#include "fauxmoESP1.h"
 
 fauxmoESP fauxmo;
 
