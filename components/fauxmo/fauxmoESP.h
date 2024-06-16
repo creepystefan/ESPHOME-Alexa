@@ -16,7 +16,7 @@ class MyCustomSensor : public PollingComponent, public Sensor {
  public:
   // constructor
   MyCustomSensor() : PollingComponent(15000) {}
-   void setup() override {
+  void setup() override {
    
     // Init serial port and clean garbage
     Serial.begin(SERIAL_BAUDRATE);
