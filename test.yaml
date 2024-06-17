@@ -1,17 +1,11 @@
-substitutions:
-  name: AlexaESP
-  external_components_source: github://creepystefan/ESPHOME-Alexa@main
-  
 external_components:
-  - source: ${external_components_source}
-    refresh: 0s
-
-
+  - source: github://creepystefan/ESPHOME-Alexa@main
+     
 esphome:
-  name: ALEXAESP
+  name: alexaesp
   friendly_name: AlexaESP
-  includes:
-    - test.h
+  libraries:
+    - https://github.com/creepystefan/ESPHOME-Alexa/
     
 esp8266:
   board: esp8285
@@ -27,8 +21,8 @@ api:
 ota:
   password: !secret otaxywfpow
 
-web_server:
-  port: 9005
+#web_server:
+#  port: 9005
 
 wifi:
   ssid: !secret wifi_ssid
@@ -40,9 +34,12 @@ wifi:
  
 captive_portal:
 
-switch:
-  - platform: gpio
-    pin: GPIO2
-    inverted: true
-    name: "GPIO2 LED inverted"
- 
+## Arduino Scatch von Alexa.h laden
+
+custom_component:
+- lambda: |-
+    auto my_custom = new MyCustomComponent();
+    return {my_custom};
+  components:
+  - id: my_custom_id
+
