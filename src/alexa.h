@@ -1,11 +1,7 @@
 #include "esphome.h"
 #include "fauxmoESP1.h"
 #include <Arduino.h>
-//#ifdef ESP32
-//    #include <WiFi.h>
-//#else
-//    #include <ESP8266WiFi.h>
-//#endif
+
 
 fauxmoESP fauxmo;
 
