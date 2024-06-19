@@ -1,5 +1,5 @@
 #include "esphome.h"
-#include "fauxmoESP1.h"
+#include "fauxmoESP.h"
 #include <Arduino.h>
 
 
