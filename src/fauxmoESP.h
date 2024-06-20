@@ -55,6 +55,23 @@ THE SOFTWARE.
 #endif
 
 #include <Arduino.h>
+
+#if defined(ESP8266)
+    #include <ESP8266WiFi.h>
+    #include <ESPAsyncTCP.h>
+#elif defined(ESP32)
+    #include <WiFi.h>
+    #include <AsyncTCP.h>
+#elif defined(ARDUINO_RASPBERRY_PI_PICO_W)
+    #include <AsyncTCP_RP2040W.h>
+#else
+	#error Platform not supported
+#endif
+
+#include <WiFiUdp.h>
+#include <functional>
+#include <vector>
+#include <MD5Builder.h>
 #include "templates.h"
 
 typedef std::function<void(unsigned char, const char *, bool, unsigned char)> TSetStateCallback;
@@ -120,4 +137,3 @@ class fauxmoESP {
         String _byte2hex(uint8_t zahl);
         String _makeMD5(String text);
 };
-
