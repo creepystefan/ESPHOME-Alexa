@@ -1,3 +1,8 @@
+cg.add_library("EEPROM", 
+
+	cg.add_library("EEPROM", 
+cg.add_library("Wire", None)
+cg.add_library("pololu", "1.3.0", "VL53L1X")
 /*
 
 FAUXMO ESP
