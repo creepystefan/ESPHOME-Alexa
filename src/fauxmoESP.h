@@ -1,8 +1,3 @@
-cg.add_library("EEPROM", 
-
-	cg.add_library("EEPROM", 
-cg.add_library("Wire", None)
-cg.add_library("pololu", "1.3.0", "VL53L1X")
 /*
 
 FAUXMO ESP
@@ -62,10 +57,10 @@ THE SOFTWARE.
 #include <Arduino.h>
 
 
-#include <WiFiUdp.h>
-#include <functional>
-#include <vector>
-#include <MD5Builder.h>
+//#include <WiFiUdp.h>
+//#include <functional>
+//#include <vector>
+//#include <MD5Builder.h>
 #include "templates.h"
 
 typedef std::function<void(unsigned char, const char *, bool, unsigned char)> TSetStateCallback;
