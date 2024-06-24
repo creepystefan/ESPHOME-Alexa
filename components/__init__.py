@@ -13,8 +13,6 @@ from .. import CONF_DPS_ID, DPS_COMPONENT_SCHEMA, dps_ns
 
 DEPENDENCIES = ["dps"]
 
-CODEOWNERS = ["@syssi"]
-
 # CONF_OUTPUT from const
 CONF_KEY_LOCK = "key_lock"
 
