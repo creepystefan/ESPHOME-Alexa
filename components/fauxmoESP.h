@@ -79,7 +79,7 @@ class fauxmoESP {
     public:
 
         ~fauxmoESP();
-
+/*
         unsigned char addDevice(const char * device_name);
         bool renameDevice(unsigned char id, const char * device_name);
         bool renameDevice(const char * old_device_name, const char * new_device_name);
@@ -96,7 +96,7 @@ class fauxmoESP {
         void createServer(bool internal) { _internal = internal; }
         void setPort(unsigned long tcp_port) { _tcp_port = tcp_port; }
         void handle();
-
+*/
     private:
 
         AsyncServer * _server;
