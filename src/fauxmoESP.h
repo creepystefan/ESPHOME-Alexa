@@ -68,10 +68,10 @@ THE SOFTWARE.
 	#error Platform not supported
 #endif
 
-#include <WiFiUdp.h>
-#include <functional>
-#include <vector>
-#include <MD5Builder.h>
+//#include <WiFiUdp.h>
+//#include <functional>
+//#include <vector>
+//#include <MD5Builder.h>
 #include "templates.h"
 
 typedef std::function<void(unsigned char, const char *, bool, unsigned char)> TSetStateCallback;
