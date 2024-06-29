@@ -55,7 +55,7 @@ THE SOFTWARE.
 #endif
 
 #include <Arduino.h>
-
+/*
 #if defined(ESP8266)
     #include <ESP8266WiFi.h>
     #include <ESPAsyncTCP.h>
@@ -67,11 +67,12 @@ THE SOFTWARE.
 #else
 	#error Platform not supported
 #endif
+*/
 
-#include <WiFiUdp.h>
+//#include <WiFiUdp.h>
 #include <functional>
 #include <vector>
-#include <MD5Builder.h>
+//#include <MD5Builder.h>
 #include "templates.h"
 
 typedef std::function<void(unsigned char, const char *, bool, unsigned char)> TSetStateCallback;
