@@ -53,8 +53,8 @@ THE SOFTWARE.
 #ifndef DEBUG_FAUXMO_VERBOSE_UDP
 #define DEBUG_FAUXMO_VERBOSE_UDP    false
 #endif
-#include "esphome.h"
-//#include <Arduino.h>
+
+#include <Arduino.h>
 /*
 #if defined(ESP8266)
     #include <ESP8266WiFi.h>
