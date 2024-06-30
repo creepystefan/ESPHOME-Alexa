@@ -69,7 +69,7 @@ THE SOFTWARE.
 #endif
 */
 
-#include <WiFiUdp.h>
+//#include <WiFiUdp.h>
 #include <functional>
 #include <vector>
 //#include <MD5Builder.h>
