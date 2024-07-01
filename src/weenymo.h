@@ -23,7 +23,7 @@ SOFTWARE.
 */
 #ifndef weenyMo_H
 #define weenyMo_H
-#include "esphome"
+#include "esphome.h"
 #include <functional>
 using namespace std;
 using namespace std::placeholders;
