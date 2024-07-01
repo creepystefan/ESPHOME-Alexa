@@ -23,9 +23,7 @@ SOFTWARE.
 */
 #ifndef weenyMo_H
 #define weenyMo_H
-// <ESP8266WiFi.h>
-// <ESPAsyncUDP.h>
-// <ESPAsyncWebServer.h>
+#include "esphome"
 #include <functional>
 using namespace std;
 using namespace std::placeholders;
