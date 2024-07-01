@@ -23,8 +23,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-//#include "esphome.h"
-//#include <Arduino.h>
+
+#include <Arduino.h>
 
 #if defined(ESP8266)
     #include <ESP8266WiFi.h>
@@ -38,11 +38,11 @@ THE SOFTWARE.
 	#error Platform not supported
 #endif
 
-
-//#include <WiFiUdp.h>
-*/
+#include <WiFiUdp.h>
 #include <functional>
 #include <vector>
+#include <MD5Builder.h>
+#include "templates.h"
 
 #pragma once
 
