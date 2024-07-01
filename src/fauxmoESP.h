@@ -41,7 +41,7 @@ THE SOFTWARE.
 
 //#include <WiFiUdp.h>
 */
-#include "esphome.h"
+
 using namespace std;
 #pragma once
 
