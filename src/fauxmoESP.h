@@ -25,7 +25,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 //#include "esphome.h"
 //#include <Arduino.h>
-/*
+
 #if defined(ESP8266)
     #include <ESP8266WiFi.h>
     #include <ESPAsyncTCP.h>
@@ -37,7 +37,7 @@ THE SOFTWARE.
 #else
 	#error Platform not supported
 #endif
-*/
+
 
 //#include <WiFiUdp.h>
 */
