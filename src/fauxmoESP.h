@@ -23,7 +23,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+//#include "esphome.h"
+//#include <Arduino.h>
+/*
+#if defined(ESP8266)
+    #include <ESP8266WiFi.h>
+    #include <ESPAsyncTCP.h>
+#elif defined(ESP32)
+    #include <WiFi.h>
+    #include <AsyncTCP.h>
+#elif defined(ARDUINO_RASPBERRY_PI_PICO_W)
+    #include <AsyncTCP_RP2040W.h>
+#else
+	#error Platform not supported
+#endif
+*/
 
+//#include <WiFiUdp.h>
 */
 
 #pragma once
@@ -53,23 +69,7 @@ THE SOFTWARE.
 #ifndef DEBUG_FAUXMO_VERBOSE_UDP
 #define DEBUG_FAUXMO_VERBOSE_UDP    false
 #endif
-//#include "esphome.h"
-//#include <Arduino.h>
-/*
-#if defined(ESP8266)
-    #include <ESP8266WiFi.h>
-    #include <ESPAsyncTCP.h>
-#elif defined(ESP32)
-    #include <WiFi.h>
-    #include <AsyncTCP.h>
-#elif defined(ARDUINO_RASPBERRY_PI_PICO_W)
-    #include <AsyncTCP_RP2040W.h>
-#else
-	#error Platform not supported
-#endif
-*/
 
-//#include <WiFiUdp.h>
 #include <functional>
 #include <vector>
 //#include <MD5Builder.h>
