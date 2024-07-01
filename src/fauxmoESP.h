@@ -41,7 +41,8 @@ THE SOFTWARE.
 
 //#include <WiFiUdp.h>
 */
-
+#include <functional>
+#include <vector>
 
 #pragma once
 
