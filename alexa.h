@@ -9,8 +9,6 @@
 //"vee three"
 #define DEVICENAME           LED
 
-weenyMo w("vee three",onVoiceCommand);
-
 void onVoiceCommand(bool onoff){ 
   Serial.printf("onVoiceCommand %d\n",onoff);
   digitalWrite(BUILTIN_LED,!onoff);
@@ -22,7 +20,7 @@ bool getAlexaState(){ // We need this to let Alexa know if we are on or off
 // The only constructor: const char* name, function<void(bool)> onCommand
 // choose the name wisely: Alexa has very selective hearing!
 //
-
+weenyMo w("vee three",onVoiceCommand);
 class MyCustomSensor : public Component, public Sensor {
  public:
 
