@@ -5,16 +5,15 @@
 // ESP8266 builtin LED is "backwards" i.e. active LOW, hence Alexa's ON=1 needs reversing
 //
 
-class MyCustomSensor : public PollingComponent, public Sensor {
+class MyCustomSensor : public Component, public Sensor {
  public:
-  
-  weenyMo w("DEVICENAME",onVoiceCommand);
-
-  MyCustomSensor() : PollingComponent(15000) { }
-
+ 
+    
 #define BUILTIN_LED          4
 //"vee three"
 #define DEVICENAME           LED
+
+weenyMo w("DEVICENAME",onVoiceCommand);
 
 void onVoiceCommand(bool onoff){ 
   Serial.printf("onVoiceCommand %d\n",onoff);
