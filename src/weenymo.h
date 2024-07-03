@@ -23,6 +23,8 @@ SOFTWARE.
 */
 #ifndef weenyMo_H
 #define weenyMo_H
+#include <ESPAsyncUDP.h>
+#include <ESPAsyncWebServer.h>
 #include "esphome.h"
 #include <functional>
 using namespace std;
