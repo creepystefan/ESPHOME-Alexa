@@ -24,7 +24,17 @@ SOFTWARE.
 #include "esphome.h"
 #ifndef weenyMo_H
 #define weenyMo_H
-#include <ESPAsyncUDP.h>
+
+
+#if defined(ESP8266)
+    #include <ESPAsyncUDP.h>
+#elif defined(ESP32)
+    #include <AsyncUDP.h>
+#else
+	#error Platform not supported
+#endif
+
+//#include <ESPAsyncUDP.h>
 #include <ESPAsyncWebServer.h>
 #include <functional>
 using namespace std;
