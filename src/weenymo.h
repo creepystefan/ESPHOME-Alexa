@@ -24,8 +24,8 @@ SOFTWARE.
 #include "esphome.h"
 #ifndef weenyMo_H
 #define weenyMo_H
-#include <ESPAsyncUDP.h>
-#include <ESPAsyncWebServer.h>
+//#include <ESPAsyncUDP.h>
+//#include <ESPAsyncWebServer.h>
 #include <functional>
 using namespace std;
 using namespace std::placeholders;
