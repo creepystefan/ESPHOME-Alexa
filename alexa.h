@@ -30,7 +30,7 @@ void setup() override {
   digitalWrite(BUILTIN_LED,HIGH); // start OFF 
   //WiFi.begin("ssid","pass"); // replace OF COURSE
   //WiFi.waitForConnectResult();  // so much neater than those stupid loops and dots
-  //w.gotIPAddress(); // ready to roll...Tell Alexa to discover devices.
+  w.gotIPAddress(); // ready to roll...Tell Alexa to discover devices.
 }
 
 void loop() override {}
