@@ -32,9 +32,9 @@ void setup() override {
   Serial.begin(74880);
   pinMode(BUILTIN_LED,OUTPUT);
   digitalWrite(BUILTIN_LED,HIGH); // start OFF 
-  WiFi.begin("ssid","pass"); // replace OF COURSE
-  WiFi.waitForConnectResult();  // so much neater than those stupid loops and dots
-  w.gotIPAddress(); // ready to roll...Tell Alexa to discover devices.
+  //WiFi.begin("ssid","pass"); // replace OF COURSE
+  //WiFi.waitForConnectResult();  // so much neater than those stupid loops and dots
+  //w.gotIPAddress(); // ready to roll...Tell Alexa to discover devices.
 }
 
 void loop() override {}
