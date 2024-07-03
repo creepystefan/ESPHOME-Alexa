@@ -20,10 +20,14 @@ bool getAlexaState(){ // We need this to let Alexa know if we are on or off
 // The only constructor: const char* name, function<void(bool)> onCommand
 // choose the name wisely: Alexa has very selective hearing!
 //
-weenyMo w("DEVICENAME",onVoiceCommand);
 
-class MyCustomComponent : public Component {
+
+class MyCustomSensor : public PollingComponent, public Sensor {
  public:
+  
+  weenyMo w("DEVICENAME",onVoiceCommand);
+
+  MyCustomSensor() : PollingComponent(15000) { }
 
 void setup() {
   Serial.begin(74880);
