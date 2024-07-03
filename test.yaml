@@ -1,14 +1,29 @@
 external_components:
-  - source: github://creepystefan/ESPHOME-Alexa@main
-     
+  - source: github://creepystefan/ESPHOME-Alexa
+  
 esphome:
-  name: alexaesp
-  friendly_name: AlexaESP
+  name: alexatest
+  
+  includes:
+   - .esphome/external_components/7df482cd/alexa.h
+  #- alexa.h
+  
   libraries:
-    - https://github.com/creepystefan/ESPHOME-Alexa/
-    
+    - alexaweenymo=https://github.com/creepystefan/ESPHOME-Alexa  
+    - ESPAsyncWebServer=https://github.com/esphome/ESPAsyncWebServer
+    - ESPAsyncUDP
+  
+  # - AsyncTCP=https://github.com/me-no-dev/AsyncTCP
+  # - ESPAsyncTCP=https://github.com/me-no-dev/ESPAsyncTCP  
+  # - subtixx/FauxmoESP@^2.0.0    
+  # - Arduino=https://github.com/esp8266/Arduino
+  # - vintlabs/FauxmoESP@^3.4
+  # - ArduinoJson
+  # - https://github.com/philbowles/weenymo
+  
 esp8266:
   board: esp8285
+  
 
 # Enable logging
 logger:
@@ -19,6 +34,7 @@ api:
     key: !secret apixywfpow
 
 ota:
+  platform: esphome
   password: !secret otaxywfpow
 
 #web_server:
@@ -34,12 +50,9 @@ wifi:
  
 captive_portal:
 
-## Arduino Scatch von Alexa.h laden
-
-custom_component:
-- lambda: |-
-    auto my_custom = new MyCustomComponent();
-    return {my_custom};
-  components:
-  - id: my_custom_id
-
+#custom_component:
+#- lambda: |-
+#    auto my_custom = new MyCustomComponent();
+#    return {my_custom};
+#  components:
+#  - id: my_custom_id
