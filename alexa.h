@@ -7,7 +7,7 @@
     
 #define BUILTIN_LED          4
 //"vee three"
-#define TESTTESTNAME           LED
+#define TESTTESTNAME           led
 
 void onVoiceCommand(bool onoff){ 
   Serial.printf("onVoiceCommand %d\n",onoff);
