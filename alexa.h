@@ -4,16 +4,12 @@
 // This function will be called when Alexa hears "switch [on | off] 'vee three'" 
 // ESP8266 builtin LED is "backwards" i.e. active LOW, hence Alexa's ON=1 needs reversing
 //
-
-class MyCustomSensor : public Component, public Sensor {
- public:
- 
     
 #define BUILTIN_LED          4
 //"vee three"
 #define DEVICENAME           LED
 
-weenyMo w("DEVICENAME",onVoiceCommand);
+weenyMo w("vee three",onVoiceCommand);
 
 void onVoiceCommand(bool onoff){ 
   Serial.printf("onVoiceCommand %d\n",onoff);
@@ -27,6 +23,8 @@ bool getAlexaState(){ // We need this to let Alexa know if we are on or off
 // choose the name wisely: Alexa has very selective hearing!
 //
 
+class MyCustomSensor : public Component, public Sensor {
+ public:
 
 void setup() override {
   Serial.begin(74880);
