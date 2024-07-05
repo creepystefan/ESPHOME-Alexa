@@ -6,7 +6,7 @@
 //
     
 #define BUILTIN_LED          4
-//"vee three"
+
 #define DEVICENAME           "LED"
 
 void onVoiceCommand(bool onoff){ 
