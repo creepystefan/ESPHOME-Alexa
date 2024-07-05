@@ -6,24 +6,15 @@ esphome:
   
   includes:
    - .esphome/external_components/7df482cd/alexa.h
-  #- alexa.h
-  
+     
   libraries:
+        
     - alexaweenymo=https://github.com/creepystefan/ESPHOME-Alexa  
     - ESPAsyncWebServer=https://github.com/esphome/ESPAsyncWebServer
     - ESPAsyncUDP
-  
-  # - AsyncTCP=https://github.com/me-no-dev/AsyncTCP
-  # - ESPAsyncTCP=https://github.com/me-no-dev/ESPAsyncTCP  
-  # - subtixx/FauxmoESP@^2.0.0    
-  # - Arduino=https://github.com/esp8266/Arduino
-  # - vintlabs/FauxmoESP@^3.4
-  # - ArduinoJson
-  # - https://github.com/philbowles/weenymo
-  
+
 esp8266:
   board: esp8285
-  
 
 # Enable logging
 logger:
@@ -37,8 +28,8 @@ ota:
   platform: esphome
   password: !secret otaxywfpow
 
-#web_server:
-#  port: 9005
+web_server:
+  port: 9005
 
 wifi:
   ssid: !secret wifi_ssid
@@ -48,6 +39,7 @@ wifi:
     gateway: !secret gateway
     subnet: !secret subnet
  
+ 
 captive_portal:
 
 #custom_component:
@@ -56,3 +48,14 @@ captive_portal:
 #    return {my_custom};
 #  components:
 #  - id: my_custom_id
+
+sensor:
+- platform: custom
+  lambda: |-
+    auto my_sensor = new MyCustomSensor();
+    App.register_component(my_sensor);
+    return {my_sensor};
+
+  sensors:
+    name: "My Custom Sensor"
+    
