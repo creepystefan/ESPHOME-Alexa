@@ -4,9 +4,6 @@ external_components:
 esphome:
   name: alexatest
   
-  includes:
-   - .esphome/external_components/7df482cd/alexa.h
-     
   libraries:
         
     - alexaweenymo=https://github.com/creepystefan/ESPHOME-Alexa  
