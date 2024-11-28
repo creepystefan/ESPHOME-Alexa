@@ -1,12 +1,20 @@
 /*
  * This is a basic example on how to use Espalexa and its device declaration methods.
  */ 
+#pragma once
+
+#include "esphome/core/component.h"
+#include "esphome.h"
+
 #ifdef ARDUINO_ARCH_ESP32
 #include <WiFi.h>
 #else
 #include <ESP8266WiFi.h>
 #endif
 #include <Espalexa.h>
+
+class ESPALEXA : public Component {
+ public:
 
 // prototypes
 boolean connectWifi();
