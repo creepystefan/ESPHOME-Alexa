@@ -1,6 +1,6 @@
 external_components:
   - source: github://creepystefan/ESPHOME-Alexa
-  
+    
 esphome:
   name: alexatest
   
