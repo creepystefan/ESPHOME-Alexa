@@ -13,6 +13,9 @@
 #endif
 #include <Espalexa.h>
 
+namespace esphome {
+namespace espalexa { 
+
 class ESPALEXA : public Component {
  public:
 
@@ -123,3 +126,7 @@ boolean connectWifi(){
   }
   return state;
 }
+};
+
+}  // namespace espalexa
+}  // namespace esphome
