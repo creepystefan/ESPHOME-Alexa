@@ -10,8 +10,8 @@ esphome:
   libraries:
         
     - alexaweenymo=https://github.com/creepystefan/ESPHOME-Alexa  
-    - ESPAsyncWebServer=https://github.com/esphome/ESPAsyncWebServer
-    - ESPAsyncUDP
+    #- ESPAsyncWebServer=https://github.com/esphome/ESPAsyncWebServer
+    #- ESPAsyncUDP
 
 esp8266:
   board: esp8285
