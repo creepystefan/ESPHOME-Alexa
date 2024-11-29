@@ -15,7 +15,6 @@
  * @license MIT
  * @contributors d-999
  */
-#include "esphome.h"
 #include "Arduino.h"
 
 //you can use these defines for library config in your sketch. Just use them before #include <Espalexa.h>
