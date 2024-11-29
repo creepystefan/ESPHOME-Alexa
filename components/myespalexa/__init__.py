@@ -7,6 +7,9 @@ cg.add_library(
     repository="https://github.com/creepystefan/ESPHOME-Alexa",
     version=None,
 )
+cg.add_library(
+    name="WebServer",
+)
 
 myespalexa_ns = cg.esphome_ns.namespace("myespalexa")
 MYESPALEXA = myespalexa_ns.class_("MYESPALEXA", cg.Component)
