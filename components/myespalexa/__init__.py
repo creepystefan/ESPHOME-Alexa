@@ -3,7 +3,6 @@ import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
 cg.add_library(
-    name="WebServer",
     name="ESPAlexa",
     repository="https://github.com/creepystefan/ESPHOME-Alexa",
     version=None,
