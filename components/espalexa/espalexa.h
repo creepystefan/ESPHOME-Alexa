@@ -125,7 +125,7 @@ void thirdLightChanged(uint8_t brightness) {
  //   Serial.println("Connection failed.");
  // }
  // return state;
-}
+//}
 };
 
 }  // namespace espalexa
