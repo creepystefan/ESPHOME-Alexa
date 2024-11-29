@@ -14,7 +14,7 @@
 #include <Espalexa.h>
 
 namespace esphome {
-namespace espalexa { 
+namespace myespalexa { 
 
 class ESPALEXA : public Component {
  public:
