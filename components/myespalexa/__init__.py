@@ -8,7 +8,7 @@ cg.add_library(
     version=None,
 )
 cg.add_library('WebServer', '')
-cg.add_library('WiFi', '')
+#cg.add_library('WiFi', '')
 
 
 myespalexa_ns = cg.esphome_ns.namespace("myespalexa")
