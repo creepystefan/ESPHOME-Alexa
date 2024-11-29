@@ -3,13 +3,12 @@ import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
 cg.add_library(
+    name="WebServer",
     name="ESPAlexa",
     repository="https://github.com/creepystefan/ESPHOME-Alexa",
     version=None,
 )
-cg.add_library(
-    name="WebServer",
-)
+
 
 myespalexa_ns = cg.esphome_ns.namespace("myespalexa")
 MYESPALEXA = myespalexa_ns.class_("MYESPALEXA", cg.Component)
