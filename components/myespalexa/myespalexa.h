@@ -16,7 +16,7 @@
 namespace esphome {
 namespace myespalexa { 
 
-class ESPALEXA : public Component {
+class MYESPALEXA : public Component {
  public:
 
 // prototypes
