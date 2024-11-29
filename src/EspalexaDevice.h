@@ -3,6 +3,7 @@
 
 #include "Arduino.h"
 #include <functional>
+#include "esphome.h"
 
 class EspalexaDevice;
 
