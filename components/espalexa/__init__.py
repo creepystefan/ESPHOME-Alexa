@@ -2,12 +2,12 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
-espalexa_ns = cg.esphome_ns.namespace("espalexa")
-ESPALEXA = espalexa_ns.class_("ESPALEXA", cg.Component)
+myespalexa_ns = cg.esphome_ns.namespace("myespalexa")
+MYESPALEXA = myespalexa_ns.class_("MYESPALEXA", cg.Component)
 
 CONFIG_SCHEMA = cv.Schema(
     {
-        cv.GenerateID(): cv.declare_id(ESPALEXA),
+        cv.GenerateID(): cv.declare_id(MYESPALEXA),
                        
     }
 ).extend(cv.COMPONENT_SCHEMA)
