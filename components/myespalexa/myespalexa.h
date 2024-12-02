@@ -19,8 +19,6 @@ namespace myespalexa {
 class MYESPALEXA : public Component {
  public:
 
-// prototypes
-//boolean connectWifi();
 
 //callback functions
 void firstLightChanged(uint8_t brightness);
