@@ -15,7 +15,7 @@
  * @license MIT
  * @contributors d-999
  */
-#include "Arduino.h"
+//#include "Arduino.h"
 #include "esphome.h"
 
 //you can use these defines for library config in your sketch. Just use them before #include <Espalexa.h>
@@ -40,7 +40,7 @@
 #else
  #ifdef ARDUINO_ARCH_ESP32
   #include <WiFi.h>
-  //#include <WebServer.h> //if you get an error here please update to ESP32 arduino core 1.0.0
+  #include <WebServer.h> //if you get an error here please update to ESP32 arduino core 1.0.0
  #else
   #include <ESP8266WebServer.h>
   #include <ESP8266WiFi.h>
