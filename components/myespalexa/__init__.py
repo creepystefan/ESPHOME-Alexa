@@ -7,7 +7,7 @@ cg.add_library(
     repository="https://github.com/creepystefan/ESPHOME-Alexa",
     version=None,
 )
-cg.add_library('WebServer', '')
+#cg.add_library('WebServer', '')
 #cg.add_library('WiFi', '')
 
 
