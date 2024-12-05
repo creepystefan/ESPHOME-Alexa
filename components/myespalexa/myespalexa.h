@@ -11,7 +11,7 @@
 //#else
 //#include <ESP8266WiFi.h>
 //#endif
-#include <Espalexa.h>
+#include "Espalexa.h"
 
 namespace esphome {
 namespace myespalexa { 
