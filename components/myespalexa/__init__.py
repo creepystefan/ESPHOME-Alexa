@@ -2,12 +2,12 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
-cg.add_library(
-    name="ESPAlexa",
-    repository="https://github.com/creepystefan/ESPHOME-Alexa",
-    version=None,
-)
-cg.add_library('WebServer', '')
+#cg.add_library(
+#    name="ESPAlexa",
+#    repository="https://github.com/creepystefan/ESPHOME-Alexa",
+#    version=None,
+#)
+#cg.add_library('WebServer', '')
 #cg.add_library('WiFi', '')
 
 
