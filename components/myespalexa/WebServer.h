@@ -25,13 +25,13 @@
 #define WEBSERVER_H
 
 #include <functional>
-#ifdef ESP8266
-#define WebServer ESP8266WebServer
-#include <ESP8266WiFi.h>
-#else
-#include <WiFi.h>
+//#ifdef ESP8266
+//#define WebServer ESP8266WebServer
+//#include <ESP8266WiFi.h>
+//#else
+//#include <WiFi.h>
 #define write_P   write
-#endif
+//#endif
 
 enum HTTPMethod { HTTP_ANY, HTTP_GET, HTTP_POST, HTTP_PUT, HTTP_PATCH, HTTP_DELETE, HTTP_OPTIONS };
 enum HTTPUploadStatus { UPLOAD_FILE_START, UPLOAD_FILE_WRITE, UPLOAD_FILE_END,
