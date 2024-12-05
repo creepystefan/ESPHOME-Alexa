@@ -1,7 +1,7 @@
 #ifndef EspalexaDevice_h
 #define EspalexaDevice_h
 
-#include "Arduino.h"
+//#include "Arduino.h"
 #include <functional>
 
 class EspalexaDevice;
